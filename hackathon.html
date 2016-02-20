@@ -43,6 +43,7 @@ var RepButton = d3.select("#republicans").on("click",function(){
         console.log(current_party);
     }   
 });
+
 var RepDebates = ["20150806","20150916","20151028","20151110","20151215"]
 var DemDebates = ["20151013","20151114","20151219"]
 var parseDate = d3.time.format("%Y%m%d").parse;
@@ -160,6 +161,17 @@ var draw_timeseries_linechart = function(target,id){
     story_teller.on("click",function(){
         if(storymode===false){
             storymode = true;
+            width = window.innerWidth*.7 - margin.right - margin.left;
+            xScale.range([0, width]);
+            yScale.range([height, 0]);
+
+            timeAxis.transition()
+                .duration(600)
+                .call(xAxis);
+
+        d3.select(".rDebates").remove();
+        d3.select(".dDebates").remove();
+        draw_debate_lines();
             console.log(true);
             //controller_slider();
         }else if(storymode===true){
