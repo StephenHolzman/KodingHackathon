@@ -19,12 +19,30 @@
 .button {
     cursor:pointer;
 }
-</style>
 
+</style>
+<center id="party-selector">
+    <div id="democrats" class="button">Democrats</div>
+    <div id="republicans" class="button">Republicans</div>
+</center>
 <div id="main-wrapper"></div>
 <script src="d3.js"></script>
 <script>
+current_party = "democrats";
 
+var DemButton = d3.select("#democrats").on("click",function(){
+    if(current_party === "republicans"){
+        current_party = "democrats";
+        console.log(current_party);
+    }   
+});
+
+var RepButton = d3.select("#republicans").on("click",function(){
+    if(current_party === "democrats"){
+        current_party = "republicans";
+        console.log(current_party);
+    }   
+});
 var RepDebates = ["20150806","20150916","20151028","20151110","20151215"]
 var DemDebates = ["20151013","20151114","20151219"]
 var parseDate = d3.time.format("%Y%m%d").parse;
