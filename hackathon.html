@@ -16,21 +16,28 @@
     stroke: blue;
     fill: blue;
 }
+.button {
+    cursor:pointer;
+}
 </style>
 
 <div id="main-wrapper"></div>
 <script src="d3.js"></script>
 <script>
+
 var RepDebates = ["20150806","20150916","20151028","20151110","20151215"]
 var DemDebates = ["20151013","20151114","20151219"]
 var parseDate = d3.time.format("%Y%m%d").parse;
 
+//Draw the main chart
 var draw_timeseries_linechart = function(target,id){
     
-
-    var margin = {top: 50,right: 150,bottom: 50, left: 150},
+    //Set Margins for Chart
+    var margin = {top: 50,right: 150,bottom: 100, left: 150},
+        //marginBrush = {top:420, right: 150, bottom: 20, left:150}
         width = window.innerWidth - margin.right - margin.left,
-        height = 400;
+        height = 500 - margin.top - margin.bottom,
+        //heightBrush = 500 - marginBrush.top - marginBrush.bottom;
         
     chart = d3.select(target)
                             .append("svg")
@@ -42,17 +49,30 @@ var draw_timeseries_linechart = function(target,id){
                             
     var xScale = d3.time.scale()
                     .range([0, width])
-                    .domain([parseDate('20150601'),parseDate('20151231')]);
-                    
+                    .domain([parseDate('20150601'),parseDate('20160218')]);
+
+    /*var xScaleBrush = d3.time.scale()
+                        .range([0, width])
+                        .domain([parseDate('20150601'),parseDate('20150218')]);
+     */        
     var yScale = d3.scale.linear()
                     .range([height, 0])
-                    .domain([0,500000]);
+                    .domain([0,100]);
     
+    /*var yScaleBrush = d3.scale.linear()
+                    .range([heightBrush, 0])
+                    .domain([0,100]);
+    */
+
     var xAxis = d3.svg.axis()
                     .scale(xScale)
                     .orient("bottom");
 
-    
+    /*var xAxisBrush = d3.svg.axis()
+                    .scale(xScaleBrush)
+                    .orient("bottom");
+    */
+
     var yAxis = d3.svg.axis()
                     .scale(yScale)
                     .orient("left")
@@ -80,7 +100,7 @@ var draw_timeseries_linechart = function(target,id){
                 .attr("x1", xScale(d))
                 .attr("x2", xScale(d))
                 .attr("y1", yScale(0))
-                .attr("y2", yScale(500000));
+                .attr("y2", yScale(100));
         });
 
         DemDebates.forEach(function(d) {
@@ -89,7 +109,7 @@ var draw_timeseries_linechart = function(target,id){
                 .attr("x1", xScale(d))
                 .attr("x2", xScale(d))
                 .attr("y1", yScale(0))
-                .attr("y2", yScale(500000));
+                .attr("y2", yScale(100));
         });
     };
     draw_debate_lines();
@@ -110,6 +130,26 @@ var draw_timeseries_linechart = function(target,id){
     };
 
     d3.select(window).on('resize',resize);
+
+    var storymode = false;
+
+    var story_teller = d3.select(target).append("center")
+                        .attr("id","story_teller")
+                        .attr("class","button")
+                        .attr("transform","translate("+window.innerWidth/2+",0)")
+                        .text("Start Story")
+
+    story_teller.on("click",function(){
+        if(storymode===false){
+            storymode = true;
+            console.log(true);
+            //controller_slider();
+        }else if(storymode===true){
+            storymode = false;
+            console.log(false);
+            //slider.remove();
+        }
+    })
 };
 
 
