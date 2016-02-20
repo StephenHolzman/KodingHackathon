@@ -119,6 +119,9 @@ var draw_timeseries_linechart = function(target,id){
             width = window.innerWidth*.7 - margin.right - margin.left;
 
        };
+        d3.select("#chart-wrapper").transition()
+            .attr("width", width + margin.left + margin.right)
+            .duration(1200);
 
         xScale.range([0, width]);
         yScale.range([height, 0]);
@@ -155,6 +158,9 @@ var draw_timeseries_linechart = function(target,id){
         monthnav.on("click",function(){
             storymode = true;
             width = window.innerWidth*.7 - margin.right - margin.left;
+            d3.select("#chart-wrapper").transition()
+            .attr("width", width + margin.left + margin.right)
+            .duration(1200);
             if(d==="January"|d==="March"|d==="May"|d==="July"|d==="August"|d==="October"|d==="December"){
                 lastday = "31"
             }else if(d==="February"){
@@ -169,9 +175,7 @@ var draw_timeseries_linechart = function(target,id){
             }
             xScale.range([0, width])
                     .domain([parseDate(year+months[i]+'01'),parseDate(year+months[i]+lastday)]);
-            console.log(d);
             
-
             yScale.range([height, 0]);
             
             xAxis = d3.svg.axis()
@@ -180,12 +184,10 @@ var draw_timeseries_linechart = function(target,id){
                     .ticks(4);
                     //.tickFormat(d3.time.format('%d'));
 
-    
-
             timeAxis.transition()
                 .duration(1200)
                 .call(xAxis);
-                
+            
             //draw_debate_lines();
             RepDebates.forEach(function(d,i){
                 d = parseDate(d);
@@ -213,7 +215,7 @@ var draw_timeseries_linechart = function(target,id){
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
                     .attr("y2", yScale(100));
-
+                console.log(xScale(d));
                 d3.select("#dDebate").append("text")
                     .attr("class", "Label")
                     .attr("transform", "translate("+xScale(d)+","+yScale(20)+")rotate(-90)")
@@ -221,7 +223,8 @@ var draw_timeseries_linechart = function(target,id){
 
             });
 
-            
+            setTimeout(function(){d3.select("#tweet-wrapper").attr("class","").attr("opacity",0).transition().attr("opacity",1).duration(500)},[1300]);
+
         })
     })
 
