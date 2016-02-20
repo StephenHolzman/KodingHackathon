@@ -25,10 +25,10 @@ var draw_timeseries_linechart = function(target,id){
         }   
     });
     //Set Margins for Chart
-    var margin = {top: 50,right: 150,bottom: 100, left: 150},
+    var margin = {top: 10,right: 20,bottom: 100, left: 60},
         //marginBrush = {top:420, right: 150, bottom: 20, left:150}
-        width = window.innerWidth - margin.right - margin.left,
-        height = 500 - margin.top - margin.bottom,
+        width = window.innerWidth*.9 - margin.right - margin.left,
+        height = 450 - margin.top - margin.bottom,
         //heightBrush = 500 - marginBrush.top - marginBrush.bottom;
         
     chart = d3.select(target)
@@ -117,7 +117,7 @@ var draw_timeseries_linechart = function(target,id){
     var resize = function(){
         if(window.innerWidth>800){
         if(storymode===false){
-            width = window.innerWidth - margin.right - margin.left; 
+            width = window.innerWidth*.9 - margin.right - margin.left; 
        }else{
             width = window.innerWidth*.6 - margin.right - margin.left;
 
@@ -125,6 +125,7 @@ var draw_timeseries_linechart = function(target,id){
         d3.select("#chart-wrapper").transition()
             .attr("width", width + margin.left + margin.right)
             .duration(1);
+        
 
         xScale.range([0, width]);
         yScale.range([height, 0]);
@@ -145,7 +146,7 @@ var draw_timeseries_linechart = function(target,id){
     var months = ["05","06","07","08","09","10","11","12","01","02"];
     var monthnames = ["May","June","July","August","September","October","November","December","January","February"]
         
-    var month_wrapper = d3.select(target).append("div")
+    var month_wrapper = d3.select("#main-wrapper").append("div")
                                         .attr("id","month-wrapper");
 
     var monthList = month_wrapper.append("center").append("ul");
@@ -164,6 +165,10 @@ var draw_timeseries_linechart = function(target,id){
             d3.select("#chart-wrapper").transition()
             .attr("width", width + margin.left + margin.right)
             .duration(1200);
+            d3.select("#poll-wrapper").transition()
+            .attr("class", "halfscreen")
+            .duration(1200);
+
             if(d==="January"|d==="March"|d==="May"|d==="July"|d==="August"|d==="October"|d==="December"){
                 lastday = "31"
             }else if(d==="February"){
@@ -234,5 +239,5 @@ var draw_timeseries_linechart = function(target,id){
 };
 
 
-draw_timeseries_linechart("#main-wrapper","chart-wrapper");
+draw_timeseries_linechart("#poll-wrapper","chart-wrapper");
   

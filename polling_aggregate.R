@@ -1,9 +1,10 @@
+
 library(lubridate)
 library(dplyr)
 library(reshape2)
 library(ggplot2)
 
-df <- read.csv('/Volumes/hd.2/Code/KodingHackathon/2016-national-gop-primary.csv')
+df <- read.csv('2016-national-gop-primary.csv')
 
 # parse Start.Date and End.Date into POSIXct date-time objects
 df$Start.Date <- parse_date_time(df$Start.Date,orders='ymd',tz='UTC')

@@ -1,3 +1,6 @@
+#party-selector{
+	height:60px;
+}
 .axis path, .axis line{
   fill: none;
   stroke: #000;
@@ -34,10 +37,12 @@ li {
 #main-wrapper{
 	min-width:400px;
 }
-#poll-wrapper{
-	float:left;
+#poll-title{
+	float:bottom;
 	min-width:400px;
-
+}
+#poll-header{
+	padding-left:50;
 }
 #tweet-wrapper{
 	width:25%;
@@ -47,6 +52,12 @@ li {
 }
 .hide{
 	display:none;
+}
+#poll-wrapper .fullscreen{
+	width:100%;
+}
+.halfscreen{
+	width:60%;
 }
 blockquote.twitter-tweet {
   display: inline-block;
