@@ -165,12 +165,18 @@ var draw_timeseries_linechart = function(target,id){
     var months = ["05","06","07","08","09","10","11","12","01","02"];
     var monthnames = ["May","June","July","August","September","October","November","December","January","February"]
         
+    var month_wrapper = d3.select(target).append("div")
+                                        .attr("id","month-wrapper");
+
+    var monthList = month_wrapper.append("nav").append("ul");
 
     monthnames.forEach(function(d,i){
-        var monthnav = d3.select(target).append("div")
-                            .attr("id","nav"+d)
-                            .attr("class","button")
-                            .text(d);
+
+        monthnav = monthList.append("li")
+                    .append("a")
+                    .attr("id","nav"+d)
+                    .attr("class","button")
+                    .text(d);
 
         monthnav.on("click",function(){
             width = window.innerWidth*.7 - margin.right - margin.left;
@@ -232,58 +238,6 @@ var draw_timeseries_linechart = function(target,id){
         })
     })
 
-    /*story_teller.on("click",function(){
-        if(storymode===false){
-            storymode = true;
-            width = window.innerWidth*.7 - margin.right - margin.left;
-            xScale.range([0, width])
-                    .domain([parseDate('20150601'),parseDate('20150630')]);
-
-            yScale.range([height, 0]);
-            
-            xAxis = d3.svg.axis()
-                    .scale(xScale)
-                    .orient("bottom")
-                    //.ticks(8)
-                    .tickFormat(d3.time.format('%b %d'));
-
-    
-
-            timeAxis.transition()
-                .duration(1200)
-                .call(xAxis);
-                
-            //draw_debate_lines();
-            RepDebates.forEach(function(d,i){
-                d = parseDate(d);
-                d3.select("#rDebate"+RepDebates[i]).transition()
-                    .duration(1200)
-                    .attr("id", "rDebate"+RepDebates[i])
-                    .attr("x1", xScale(d))
-                    .attr("x2", xScale(d))
-                    .attr("y1", yScale(0))
-                    .attr("y2", yScale(100));
-            });
-
-            DemDebates.forEach(function(d,i){
-                d = parseDate(d);
-                d3.select("#dDebate"+DemDebates[i]).transition()
-                    .duration(1200)
-                    .attr("id", "rDebate"+DemDebates[i])
-                    .attr("x1", xScale(d))
-                    .attr("x2", xScale(d))
-                    .attr("y1", yScale(0))
-                    .attr("y2", yScale(100));
-            });
-        //draw_debate_lines();
-            console.log(true);
-            //controller_slider();
-        }else if(storymode===true){
-            storymode = false;
-            console.log(false);
-            //slider.remove();
-        }
-    })*/
 };
 
 
