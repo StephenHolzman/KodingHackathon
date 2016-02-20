@@ -1,19 +1,7 @@
 
 current_party = "democrats";
 
-var DemButton = d3.select("#democrats").on("click",function(){
-    if(current_party === "republicans"){
-        current_party = "democrats";
-        console.log(current_party);
-    }   
-});
 
-var RepButton = d3.select("#republicans").on("click",function(){
-    if(current_party === "democrats"){
-        current_party = "republicans";
-        console.log(current_party);
-    }   
-});
 
 var RepDebates = ["20150806","20150916","20151028","20151110","20151215"]
 var DemDebates = ["20151013","20151114","20151219"]
@@ -21,7 +9,21 @@ var parseDate = d3.time.format("%Y%m%d").parse;
 
 //Draw the main chart
 var draw_timeseries_linechart = function(target,id){
-    
+    var DemButton = d3.select("#democrats").on("click",function(){
+        if(current_party === "republicans"){
+            current_party = "democrats";
+            d3.selectAll(".rDebates").remove();
+            draw_debate_lines();
+        }   
+    });
+
+    var RepButton = d3.select("#republicans").on("click",function(){
+        if(current_party === "democrats"){
+            current_party = "republicans";
+            d3.selectAll(".dDebates").remove();
+            draw_debate_lines();
+        }   
+    });
     //Set Margins for Chart
     var margin = {top: 50,right: 150,bottom: 100, left: 150},
         //marginBrush = {top:420, right: 150, bottom: 20, left:150}
@@ -113,6 +115,7 @@ var draw_timeseries_linechart = function(target,id){
     draw_debate_lines();
 
     var resize = function(){
+        if(window.innerWidth>800){
         if(storymode===false){
             width = window.innerWidth - margin.right - margin.left; 
        }else{
@@ -133,7 +136,7 @@ var draw_timeseries_linechart = function(target,id){
         d3.select(".rDebates").remove();
         d3.select(".dDebates").remove();
         draw_debate_lines();
-    
+    };
     };
 
     d3.select(window).on('resize',resize);
