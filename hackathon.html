@@ -112,19 +112,21 @@ var draw_timeseries_linechart = function(target,id){
         var dDebates = chart.append("g")
                         .attr("class","dDebates");
 
-        RepDebates.forEach(function(d) {
+        RepDebates.forEach(function(d,i) {
+
             d = parseDate(d);
             var line = rDebates.append("line")
-                //.attr("class", "debate")
+                .attr("id", "rDebate"+RepDebates[i])
                 .attr("x1", xScale(d))
                 .attr("x2", xScale(d))
                 .attr("y1", yScale(0))
                 .attr("y2", yScale(100));
         });
 
-        DemDebates.forEach(function(d) {
+        DemDebates.forEach(function(d,i) {
             d = parseDate(d);
             var line = dDebates.append("line")
+                .attr("id", "dDebate"+DemDebates[i])
                 .attr("x1", xScale(d))
                 .attr("x2", xScale(d))
                 .attr("y1", yScale(0))
@@ -166,12 +168,31 @@ var draw_timeseries_linechart = function(target,id){
             yScale.range([height, 0]);
 
             timeAxis.transition()
-                .duration(600)
+                .duration(1200)
                 .call(xAxis);
 
-        d3.select(".rDebates").remove();
-        d3.select(".dDebates").remove();
-        draw_debate_lines();
+            RepDebates.forEach(function(d,i){
+                d = parseDate(d);
+                d3.select("#rDebate"+RepDebates[i]).transition()
+                    .duration(1200)
+                    .attr("id", "rDebate"+RepDebates[i])
+                    .attr("x1", xScale(d))
+                    .attr("x2", xScale(d))
+                    .attr("y1", yScale(0))
+                    .attr("y2", yScale(100));
+            });
+
+            DemDebates.forEach(function(d,i){
+                d = parseDate(d);
+                d3.select("#dDebate"+DemDebates[i]).transition()
+                    .duration(1200)
+                    .attr("id", "rDebate"+DemDebates[i])
+                    .attr("x1", xScale(d))
+                    .attr("x2", xScale(d))
+                    .attr("y1", yScale(0))
+                    .attr("y2", yScale(100));
+            });
+        //draw_debate_lines();
             console.log(true);
             //controller_slider();
         }else if(storymode===true){
