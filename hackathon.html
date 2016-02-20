@@ -2,27 +2,37 @@
 <meta charset="utf-8"/>
 <style>
 
-.axis path, .axis line {
+.axis path, .axis line{
   fill: none;
   stroke: #000;
 }
 
+.rDebates line{
+    stroke: red;
+    fill: red;
+}
+
+.dDebates line{
+    stroke: blue;
+    fill: blue;
+}
 </style>
 
 <div id="main-wrapper"></div>
 <script src="d3.js"></script>
 <script>
-
+var RepDebates = ["20150806","20150916","20151028","20151110","20151215"]
+var DemDebates = ["20151013","20151114","20151219"]
+var parseDate = d3.time.format("%Y%m%d").parse;
 
 var draw_timeseries_linechart = function(target,id){
     
-    var parseDate = d3.time.format("%Y%m%d").parse;
 
     var margin = {top: 50,right: 150,bottom: 50, left: 150},
-        width = window.innerWidth*.8 - margin.right - margin.left,
+        width = window.innerWidth - margin.right - margin.left,
         height = 400;
         
-    var chart = d3.select(target)
+    chart = d3.select(target)
                             .append("svg")
                             .attr("id",id)
                             .attr("width", width + margin.left + margin.right)
@@ -57,8 +67,35 @@ var draw_timeseries_linechart = function(target,id){
             .attr("class", "y axis")
             .call(yAxis);
 
+    var draw_debate_lines = function(){
+        var rDebates = chart.append("g")
+                        .attr("class","rDebates");
+        var dDebates = chart.append("g")
+                        .attr("class","dDebates");
+
+        RepDebates.forEach(function(d) {
+            d = parseDate(d);
+            var line = rDebates.append("line")
+                //.attr("class", "debate")
+                .attr("x1", xScale(d))
+                .attr("x2", xScale(d))
+                .attr("y1", yScale(0))
+                .attr("y2", yScale(500000));
+        });
+
+        DemDebates.forEach(function(d) {
+            d = parseDate(d);
+            var line = dDebates.append("line")
+                .attr("x1", xScale(d))
+                .attr("x2", xScale(d))
+                .attr("y1", yScale(0))
+                .attr("y2", yScale(500000));
+        });
+    };
+    draw_debate_lines();
+
     var resize = function(){
-        width = window.innerWidth*.8 - margin.right - margin.left;
+        width = window.innerWidth - margin.right - margin.left;
         xScale.range([0, width]);
         yScale.range([height, 0]);
 
@@ -66,12 +103,15 @@ var draw_timeseries_linechart = function(target,id){
             .duration(1)
             .call(xAxis);
 
+        d3.select(".rDebates").remove();
+        d3.select(".dDebates").remove();
+        draw_debate_lines();
     
     };
 
     d3.select(window).on('resize',resize);
-
 };
+
 
 draw_timeseries_linechart("#main-wrapper","chart-wrapper");
   
