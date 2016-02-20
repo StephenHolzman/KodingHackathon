@@ -1,0 +1,2009 @@
+{
+    "statuses": [
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 06:36:03 +0000 2016",
+            "id": 700569519253618700,
+            "id_str": "700569519253618689",
+            "text": "Being in Vegas for #PieceOfMe is amazing for so many reasons... Especially when you get to meet @HillaryClinton! https://t.co/OMEIKYpLec",
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 16409683,
+                "id_str": "16409683",
+                "name": "Britney Spears",
+                "screen_name": "britneyspears",
+                "location": "Los Angeles, CA",
+                "description": "It’s Britney Bitch! Get #PieceOfMe tickets now! https://t.co/wmqgzcAxcc",
+                "url": "https://t.co/wmqgzcAxcc",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/wmqgzcAxcc",
+                                "expanded_url": "http://britney.lk/pomtickets",
+                                "display_url": "britney.lk/pomtickets",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/wmqgzcAxcc",
+                                "expanded_url": "http://britney.lk/pomtickets",
+                                "display_url": "britney.lk/pomtickets",
+                                "indices": [
+                                    48,
+                                    71
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 44183960,
+                "friends_count": 395807,
+                "listed_count": 124767,
+                "created_at": "Mon Sep 22 20:47:35 +0000 2008",
+                "favourites_count": 1801,
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 4461,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": true,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/617762912464035840/0lVc-on2.jpg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/617762912464035840/0lVc-on2.jpg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/694936761760256001/CWV0dR6v_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/694936761760256001/CWV0dR6v_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/16409683/1454519163",
+                "profile_link_color": "D44A71",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "F4F4F4",
+                "profile_text_color": "222222",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 3496,
+            "favorite_count": 9710,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "PieceOfMe",
+                        "indices": [
+                            19,
+                            29
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            96,
+                            111
+                        ]
+                    }
+                ],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 700569478954766300,
+                        "id_str": "700569478954766338",
+                        "indices": [
+                            113,
+                            136
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/CbjsOrWUUAIv9BI.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/CbjsOrWUUAIv9BI.jpg",
+                        "url": "https://t.co/OMEIKYpLec",
+                        "display_url": "pic.twitter.com/OMEIKYpLec",
+                        "expanded_url": "http://twitter.com/britneyspears/status/700569519253618689/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "large": {
+                                "w": 2048,
+                                "h": 1364,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 1200,
+                                "h": 799,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "small": {
+                                "w": 680,
+                                "h": 453,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 03:20:40 +0000 2016",
+            "id": 700520348438016000,
+            "id_str": "700520348438016002",
+            "text": "Glad to hear @HillaryClinton's promise to remove the three and ten year bars against returning immigrants put in place by the Clinton admin.",
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 216776631,
+                "id_str": "216776631",
+                "name": "Bernie Sanders",
+                "screen_name": "BernieSanders",
+                "location": "Vermont",
+                "description": "Join our campaign for president at https://t.co/nuBuflGIwb. Tweets by staff.",
+                "url": "https://t.co/W6f7Iy1Nho",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/W6f7Iy1Nho",
+                                "expanded_url": "https://berniesanders.com",
+                                "display_url": "berniesanders.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/nuBuflGIwb",
+                                "expanded_url": "http://berniesanders.com",
+                                "display_url": "berniesanders.com",
+                                "indices": [
+                                    35,
+                                    58
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 1464956,
+                "friends_count": 1455,
+                "listed_count": 6994,
+                "created_at": "Wed Nov 17 17:53:52 +0000 2010",
+                "favourites_count": 797,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 6743,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "EA5047",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/576114811475341312/Q2-L3Yol.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/576114811475341312/Q2-L3Yol.jpeg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/696324119256821761/B_K51XRb_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/696324119256821761/B_K51XRb_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/216776631/1451363799",
+                "profile_link_color": "3B94D9",
+                "profile_sidebar_border_color": "EEEEEE",
+                "profile_sidebar_fill_color": "EFEFEF",
+                "profile_text_color": "050005",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 2201,
+            "favorite_count": 4499,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            13,
+                            28
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Thu Feb 18 17:42:28 +0000 2016",
+            "id": 700374837517090800,
+            "id_str": "700374837517090817",
+            "text": "Shirt by @themarcjacobs. History by @hillaryclinton. https://t.co/mhIyBIEf77 #MadeForHistory #ImWithHer https://t.co/CNztRnrJkK",
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 157140968,
+                "id_str": "157140968",
+                "name": "Kendall Jenner",
+                "screen_name": "KendallJenner",
+                "location": "wherever the wind takes me.",
+                "description": "Model • The Society Management // Elite Paris // Elite London // Elite Milan",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 15731914,
+                "friends_count": 141,
+                "listed_count": 15493,
+                "created_at": "Sat Jun 19 00:03:11 +0000 2010",
+                "favourites_count": 3541,
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 8664,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": true,
+                "profile_background_color": "FAF5F5",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/450074408753713152/sOZDBHXT.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/450074408753713152/sOZDBHXT.jpeg",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/644923262988877824/a6RBEI2P_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/644923262988877824/a6RBEI2P_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/157140968/1419615543",
+                "profile_link_color": "9443E0",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "DFD0E8",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 2369,
+            "favorite_count": 9241,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "MadeForHistory",
+                        "indices": [
+                            77,
+                            92
+                        ]
+                    },
+                    {
+                        "text": "ImWithHer",
+                        "indices": [
+                            93,
+                            103
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "themarcjacobs",
+                        "name": "Marc Jacobs",
+                        "id": 225190303,
+                        "id_str": "225190303",
+                        "indices": [
+                            9,
+                            23
+                        ]
+                    },
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            36,
+                            51
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/mhIyBIEf77",
+                        "expanded_url": "http://hrc.io/MadeForHistory",
+                        "display_url": "hrc.io/MadeForHistory",
+                        "indices": [
+                            53,
+                            76
+                        ]
+                    }
+                ],
+                "media": [
+                    {
+                        "id": 700374836997021700,
+                        "id_str": "700374836997021696",
+                        "indices": [
+                            104,
+                            127
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/Cbg7NBjUYAAi0-E.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/Cbg7NBjUYAAi0-E.jpg",
+                        "url": "https://t.co/CNztRnrJkK",
+                        "display_url": "pic.twitter.com/CNztRnrJkK",
+                        "expanded_url": "http://twitter.com/KendallJenner/status/700374837517090817/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "large": {
+                                "w": 750,
+                                "h": 514,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 600,
+                                "h": 411,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 340,
+                                "h": 233,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 20:38:49 +0000 2016",
+            "id": 700781604768186400,
+            "id_str": "700781604768186368",
+            "text": "Morgan Freeman endorses @HillaryClinton, calling 2016 a \"very, very important election\" https://t.co/qihm2tn7cG https://t.co/CsDX9amY1s",
+            "source": "<a href=\"http://www.sprinklr.com\" rel=\"nofollow\">Sprinklr</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 759251,
+                "id_str": "759251",
+                "name": "CNN",
+                "screen_name": "CNN",
+                "location": "",
+                "description": "It’s our job to #GoThere and tell the most difficult stories. Come with us!",
+                "url": "http://t.co/IaghNW8Xm2",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/IaghNW8Xm2",
+                                "expanded_url": "http://www.cnn.com",
+                                "display_url": "cnn.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 23367359,
+                "friends_count": 1111,
+                "listed_count": 113134,
+                "created_at": "Fri Feb 09 00:35:02 +0000 2007",
+                "favourites_count": 1358,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 78646,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": true,
+                "profile_background_color": "323232",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/515228058286952449/zVfUxqPl.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/515228058286952449/zVfUxqPl.jpeg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/759251/1454562486",
+                "profile_link_color": "004287",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "EEEEEE",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 526,
+            "favorite_count": 803,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            24,
+                            39
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/qihm2tn7cG",
+                        "expanded_url": "http://cnn.it/1KvJT7U",
+                        "display_url": "cnn.it/1KvJT7U",
+                        "indices": [
+                            88,
+                            111
+                        ]
+                    },
+                    {
+                        "url": "https://t.co/CsDX9amY1s",
+                        "expanded_url": "http://cnn.it/1QOMqqv",
+                        "display_url": "cnn.it/1QOMqqv",
+                        "indices": [
+                            112,
+                            135
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Sat Feb 20 06:06:14 +0000 2016",
+            "id": 700924401768919000,
+            "id_str": "700924401768919041",
+            "text": "I'm not only voting for her, I like her! Nevada don't forget to caucus tomorrow! #ImWithHer @HillaryClinton https://t.co/VdLzpXcvYO",
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 110827653,
+                "id_str": "110827653",
+                "name": "Eva Longoria",
+                "screen_name": "EvaLongoria",
+                "location": "Los Angeles, CA",
+                "description": "Actress, Producer, Director, Activist, Philanthropist, Daughter, Sister, Aunt, Friend, HUMAN! Instagram: EvaLongoria / Snapchat: RealEvaLongoria",
+                "url": "https://t.co/jcvPVEORBy",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/jcvPVEORBy",
+                                "expanded_url": "http://www.nbc.com/telenovela",
+                                "display_url": "nbc.com/telenovela",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 7363426,
+                "friends_count": 794,
+                "listed_count": 25792,
+                "created_at": "Tue Feb 02 22:31:26 +0000 2010",
+                "favourites_count": 3,
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 13665,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FF6699",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/591704786002554880/Qy5T5Jye.jpg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/591704786002554880/Qy5T5Jye.jpg",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/666748250343546880/MPrc3cTF_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/666748250343546880/MPrc3cTF_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/110827653/1447219166",
+                "profile_link_color": "B40B43",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "E5507E",
+                "profile_text_color": "362720",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 406,
+            "favorite_count": 1141,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "ImWithHer",
+                        "indices": [
+                            81,
+                            91
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            92,
+                            107
+                        ]
+                    }
+                ],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 700924392054784000,
+                        "id_str": "700924392054784000",
+                        "indices": [
+                            108,
+                            131
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/CbovBVrVAAAMqTk.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/CbovBVrVAAAMqTk.jpg",
+                        "url": "https://t.co/VdLzpXcvYO",
+                        "display_url": "pic.twitter.com/VdLzpXcvYO",
+                        "expanded_url": "http://twitter.com/EvaLongoria/status/700924401768919041/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "medium": {
+                                "w": 900,
+                                "h": 1200,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "small": {
+                                "w": 510,
+                                "h": 680,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1536,
+                                "h": 2048,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 16:24:18 +0000 2016",
+            "id": 700717554021445600,
+            "id_str": "700717554021445633",
+            "text": "Powerful @HillaryClinton bio ad in SC.  Her history of advocacy is far more compelling when Morgan Freeman tells it! https://t.co/7QLACZVNMP",
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 244655353,
+                "id_str": "244655353",
+                "name": "David Axelrod",
+                "screen_name": "davidaxelrod",
+                "location": "",
+                "description": "Director, UChicago Institute of Politics. Senior Political Commentator @CNN. Host, The Axe Files, https://t.co/ywGSG0Wsi8. Views expressed here are my own.",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/ywGSG0Wsi8",
+                                "expanded_url": "http://itunes.com/AxeFiles",
+                                "display_url": "itunes.com/AxeFiles",
+                                "indices": [
+                                    98,
+                                    121
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 393510,
+                "friends_count": 389,
+                "listed_count": 6731,
+                "created_at": "Sat Jan 29 20:34:55 +0000 2011",
+                "favourites_count": 46,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 4023,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/2948601880/c6d7f729324c1e592ea9b0879e4abca5_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/2948601880/c6d7f729324c1e592ea9b0879e4abca5_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/244655353/1454447861",
+                "profile_link_color": "0084B4",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 433,
+            "favorite_count": 499,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            9,
+                            24
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/7QLACZVNMP",
+                        "expanded_url": "https://www.youtube.com/watch?v=3iAMPzQzI-4",
+                        "display_url": "youtube.com/watch?v=3iAMPz…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 20:02:08 +0000 2016",
+            "id": 700772375986475000,
+            "id_str": "700772375986475008",
+            "text": "Morgan Freeman endorses @HillaryClinton and says this is a \"very, very important election\" https://t.co/UjLV9jQAkm https://t.co/CspxmygpEq",
+            "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 13850422,
+                "id_str": "13850422",
+                "name": "CNN Politics",
+                "screen_name": "CNNPolitics",
+                "location": "Washington, D.C.",
+                "description": "Political news, campaign stories and Washington coverage from CNN's political team.",
+                "url": "http://t.co/8iMwUQLofD",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/8iMwUQLofD",
+                                "expanded_url": "http://CNNPolitics.com",
+                                "display_url": "CNNPolitics.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 430091,
+                "friends_count": 761,
+                "listed_count": 7570,
+                "created_at": "Sat Feb 23 03:12:49 +0000 2008",
+                "favourites_count": 176,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 49818,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "100F14",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/591311847145406464/NVCpyjyz.png",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/591311847145406464/NVCpyjyz.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/591311085099212800/O-YtSZ3U_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/591311085099212800/O-YtSZ3U_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/13850422/1454560071",
+                "profile_link_color": "0000FF",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "F1F5E7",
+                "profile_text_color": "000000",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 266,
+            "favorite_count": 283,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            24,
+                            39
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/UjLV9jQAkm",
+                        "expanded_url": "http://cnn.it/1TuJF3L",
+                        "display_url": "cnn.it/1TuJF3L",
+                        "indices": [
+                            91,
+                            114
+                        ]
+                    },
+                    {
+                        "url": "https://t.co/CspxmygpEq",
+                        "expanded_url": "http://cnn.it/1QOMqqv",
+                        "display_url": "cnn.it/1QOMqqv",
+                        "indices": [
+                            115,
+                            138
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 02:23:59 +0000 2016",
+            "id": 700506081848483800,
+            "id_str": "700506081848483840",
+            "text": "I've put forward an immigration plan that protects children and keeps families together. It is time for @HillaryClinton to do the same.",
+            "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 216776631,
+                "id_str": "216776631",
+                "name": "Bernie Sanders",
+                "screen_name": "BernieSanders",
+                "location": "Vermont",
+                "description": "Join our campaign for president at https://t.co/nuBuflGIwb. Tweets by staff.",
+                "url": "https://t.co/W6f7Iy1Nho",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/W6f7Iy1Nho",
+                                "expanded_url": "https://berniesanders.com",
+                                "display_url": "berniesanders.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/nuBuflGIwb",
+                                "expanded_url": "http://berniesanders.com",
+                                "display_url": "berniesanders.com",
+                                "indices": [
+                                    35,
+                                    58
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 1464956,
+                "friends_count": 1455,
+                "listed_count": 6994,
+                "created_at": "Wed Nov 17 17:53:52 +0000 2010",
+                "favourites_count": 797,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 6743,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "EA5047",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/576114811475341312/Q2-L3Yol.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/576114811475341312/Q2-L3Yol.jpeg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/696324119256821761/B_K51XRb_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/696324119256821761/B_K51XRb_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/216776631/1451363799",
+                "profile_link_color": "3B94D9",
+                "profile_sidebar_border_color": "EEEEEE",
+                "profile_sidebar_fill_color": "EFEFEF",
+                "profile_text_color": "050005",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 1021,
+            "favorite_count": 2528,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            104,
+                            119
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "iso_language_code": "und",
+                "result_type": "popular"
+            },
+            "created_at": "Fri Feb 19 06:10:50 +0000 2016",
+            "id": 700563173246693400,
+            "id_str": "700563173246693377",
+            "text": "https://t.co/bcEYRzHLeS #HillaryClinton @HillaryClinton #ImWithHer",
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 90021519,
+                "id_str": "90021519",
+                "name": "Chloë Grace Moretz",
+                "screen_name": "ChloeGMoretz",
+                "location": "Los Angeles",
+                "description": "live life to the fullest and never back down. Live.Laugh.Love xxxx",
+                "url": "https://t.co/SnMPlkHQjV",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/SnMPlkHQjV",
+                                "expanded_url": "http://instagram.com/chloegmoretz",
+                                "display_url": "instagram.com/chloegmoretz",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 2025673,
+                "friends_count": 1296,
+                "listed_count": 8842,
+                "created_at": "Sat Nov 14 21:09:15 +0000 2009",
+                "favourites_count": 2640,
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 21139,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": true,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/512695504354807810/PbNautjJ.png",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/512695504354807810/PbNautjJ.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/644336000718741504/05v9_kXO_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/644336000718741504/05v9_kXO_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/90021519/1447996189",
+                "profile_link_color": "FA9BEF",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "BEE7FA",
+                "profile_text_color": "F08BF0",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 351,
+            "favorite_count": 1583,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "HillaryClinton",
+                        "indices": [
+                            24,
+                            39
+                        ]
+                    },
+                    {
+                        "text": "ImWithHer",
+                        "indices": [
+                            56,
+                            66
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            40,
+                            55
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/bcEYRzHLeS",
+                        "expanded_url": "https://www.yahoo.com/politics/chloe-grace-moretz-stumping-for-hillary-in-024419479.html",
+                        "display_url": "yahoo.com/politics/chloe…",
+                        "indices": [
+                            0,
+                            23
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "und"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Thu Feb 18 19:47:28 +0000 2016",
+            "id": 700406297187868700,
+            "id_str": "700406297187868673",
+            "text": "This is the @HillaryClinton I’ve known for over 40 years—and she will do what she says she will do! #ImWIthHer\nhttps://t.co/omJxcjNRe8",
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1330457336,
+                "id_str": "1330457336",
+                "name": "Bill Clinton",
+                "screen_name": "billclinton",
+                "location": "New York, NY",
+                "description": "Founder, Clinton Foundation and 42nd President \u0003of the United States. Follow @clintonfdn for \u0003more on my work around the world.",
+                "url": "http://t.co/gI8TIlAJHk",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/gI8TIlAJHk",
+                                "expanded_url": "http://www.clintonfoundation.org",
+                                "display_url": "clintonfoundation.org",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 5098075,
+                "friends_count": 14,
+                "listed_count": 17679,
+                "created_at": "Sat Apr 06 01:47:40 +0000 2013",
+                "favourites_count": 9,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 406,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/471776767565258752/G1uavTmR.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/471776767565258752/G1uavTmR.jpeg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/451207149478096896/HoMUOmyu_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/451207149478096896/HoMUOmyu_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1330457336/1401315347",
+                "profile_link_color": "032961",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": false,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 927,
+            "favorite_count": 2012,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "ImWIthHer",
+                        "indices": [
+                            100,
+                            110
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            12,
+                            27
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/omJxcjNRe8",
+                        "expanded_url": "https://amp.twimg.com/v/fe62965c-8caf-4886-968f-5fb5ce89057d",
+                        "display_url": "amp.twimg.com/v/fe62965c-8ca…",
+                        "indices": [
+                            111,
+                            134
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 16:15:55 +0000 2016",
+            "id": 700715446157369300,
+            "id_str": "700715446157369345",
+            "text": "\"Please just release those transcripts so we know exactly where you stand.\" \n@HillaryClinton refused. Again. \nhttps://t.co/bE7w2Avaj3",
+            "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2329066872,
+                "id_str": "2329066872",
+                "name": "The Intercept",
+                "screen_name": "the_intercept",
+                "location": "",
+                "description": "Fearless, adversarial journalism.",
+                "url": "http://t.co/PFmRMfIgx6",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/PFmRMfIgx6",
+                                "expanded_url": "http://www.theintercept.com",
+                                "display_url": "theintercept.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 218452,
+                "friends_count": 480,
+                "listed_count": 6347,
+                "created_at": "Wed Feb 05 16:49:01 +0000 2014",
+                "favourites_count": 1412,
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 8598,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/621138310585409536/mSJHNbO6_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/621138310585409536/mSJHNbO6_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2329066872/1436931331",
+                "profile_link_color": "000000",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": false,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": true,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 295,
+            "favorite_count": 264,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            77,
+                            92
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/bE7w2Avaj3",
+                        "expanded_url": "http://interc.pt/1UcisSD",
+                        "display_url": "interc.pt/1UcisSD",
+                        "indices": [
+                            110,
+                            133
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 20:45:14 +0000 2016",
+            "id": 700783220074348500,
+            "id_str": "700783220074348544",
+            "text": "Got student debt? @HillaryClinton's got a plan to help you. Let me explain. #ImWithHer https://t.co/oSFJYNR370",
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 379754341,
+                "id_str": "379754341",
+                "name": "Michelle Kwan",
+                "screen_name": "MichelleWKwan",
+                "location": "",
+                "description": "Surrogate Outreach Coordinator for @HillaryClinton, Olympian, Member @FitnessGov, ❤ @ClayPell @SpecialOlympics",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 33418,
+                "friends_count": 945,
+                "listed_count": 733,
+                "created_at": "Sun Sep 25 14:14:25 +0000 2011",
+                "favourites_count": 2478,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 2590,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "ACDED6",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000149996032/76W2uUCb.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000149996032/76W2uUCb.jpeg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/659029086212345856/l1sql8Pd_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/659029086212345856/l1sql8Pd_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/379754341/1434454625",
+                "profile_link_color": "038543",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 357,
+            "favorite_count": 727,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "ImWithHer",
+                        "indices": [
+                            76,
+                            86
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            18,
+                            33
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/oSFJYNR370",
+                        "expanded_url": "https://www.youtube.com/watch?v=3hnXc7rbG30&feature=youtu.be",
+                        "display_url": "youtube.com/watch?v=3hnXc7…",
+                        "indices": [
+                            87,
+                            110
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 19:27:38 +0000 2016",
+            "id": 700763691193471000,
+            "id_str": "700763691193470976",
+            "text": "Despite 30 million uninsured, @HillaryClinton's campaign last night declared that America has universal health care. https://t.co/xT1SIX6ROO",
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 14855994,
+                "id_str": "14855994",
+                "name": "David Sirota",
+                "screen_name": "davidsirota",
+                "location": "The 1980s",
+                "description": "@IBTimes Senior Editor, Investigations. Editor-in-chief of IBT's @Poli_Capital.\nAlso: Denverite, author, vegetarian, real guy from ABC's The Goldbergs",
+                "url": "http://t.co/jWSZFB8KKO",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/jWSZFB8KKO",
+                                "expanded_url": "http://www.ibtimes.com/reporters/david-sirota",
+                                "display_url": "ibtimes.com/reporters/davi…",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 43470,
+                "friends_count": 2499,
+                "listed_count": 2257,
+                "created_at": "Wed May 21 12:59:37 +0000 2008",
+                "favourites_count": 2130,
+                "utc_offset": -25200,
+                "time_zone": "Mountain Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 45889,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/220365877/twitter-final2.jpg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/220365877/twitter-final2.jpg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/3535032877/e5af0cf7ed0ad775c799a6a635cf90e3_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/3535032877/e5af0cf7ed0ad775c799a6a635cf90e3_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/14855994/1357342927",
+                "profile_link_color": "2424FF",
+                "profile_sidebar_border_color": "CFCFCF",
+                "profile_sidebar_fill_color": "FFFFFF",
+                "profile_text_color": "000000",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 170,
+            "favorite_count": 141,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            30,
+                            45
+                        ]
+                    }
+                ],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 700763690576924700,
+                        "id_str": "700763690576924672",
+                        "indices": [
+                            117,
+                            140
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/Cbmc3SBUUAAxUFP.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/Cbmc3SBUUAAxUFP.jpg",
+                        "url": "https://t.co/xT1SIX6ROO",
+                        "display_url": "pic.twitter.com/xT1SIX6ROO",
+                        "expanded_url": "http://twitter.com/davidsirota/status/700763691193470976/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "small": {
+                                "w": 340,
+                                "h": 477,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 580,
+                                "h": 814,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 580,
+                                "h": 814,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 20:26:35 +0000 2016",
+            "id": 700778528854376400,
+            "id_str": "700778528854376448",
+            "text": "Morgan Freeman narrates ad for @HillaryClinton. The iconic actor explains his decision to @CNN's @donlemon, 9p ET\nhttps://t.co/KbmqYmH4v5",
+            "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2415053456,
+                "id_str": "2415053456",
+                "name": "CNN Tonight",
+                "screen_name": "CNNTonight",
+                "location": "New York, NY",
+                "description": "A live hour of the day’s biggest stories. Weekdays at 10p.",
+                "url": "http://t.co/IaghNWr6Aa",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/IaghNWr6Aa",
+                                "expanded_url": "http://www.cnn.com",
+                                "display_url": "cnn.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 28194,
+                "friends_count": 385,
+                "listed_count": 317,
+                "created_at": "Fri Mar 28 00:00:22 +0000 2014",
+                "favourites_count": 21,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 11319,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "172262",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/454378063296344064/NpCftfML.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/454378063296344064/NpCftfML.jpeg",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/603223772942999552/JdH4VsP5_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/603223772942999552/JdH4VsP5_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2415053456/1432070347",
+                "profile_link_color": "009999",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 224,
+            "favorite_count": 369,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            31,
+                            46
+                        ]
+                    },
+                    {
+                        "screen_name": "CNN",
+                        "name": "CNN",
+                        "id": 759251,
+                        "id_str": "759251",
+                        "indices": [
+                            90,
+                            94
+                        ]
+                    },
+                    {
+                        "screen_name": "donlemon",
+                        "name": "Don Lemon",
+                        "id": 16051471,
+                        "id_str": "16051471",
+                        "indices": [
+                            97,
+                            106
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/KbmqYmH4v5",
+                        "expanded_url": "http://cnn.it/1RcBx4l",
+                        "display_url": "cnn.it/1RcBx4l",
+                        "indices": [
+                            114,
+                            137
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "created_at": "Fri Feb 19 03:31:57 +0000 2016",
+            "id": 700523185112920000,
+            "id_str": "700523185112920064",
+            "text": ".@HillaryClinton when asked to #releasethetranscripts during the #DemTownHall #TYTlive https://t.co/FRT4k3TDUy",
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 14957147,
+                "id_str": "14957147",
+                "name": "The Young Turks",
+                "screen_name": "TheYoungTurks",
+                "location": "Los Angeles, CA",
+                "description": "Hosted by @CenkUygur & @AnaKasparian. Watch #TYTLive weeknights 6E/8P weeknights https://t.co/A0K1gSPMS9",
+                "url": "http://t.co/26nXyzflue",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/26nXyzflue",
+                                "expanded_url": "http://youtube.com/user/theyoungturks",
+                                "display_url": "youtube.com/user/theyoungt…",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/A0K1gSPMS9",
+                                "expanded_url": "http://www.tytnetwork.com/live",
+                                "display_url": "tytnetwork.com/live",
+                                "indices": [
+                                    81,
+                                    104
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 152132,
+                "friends_count": 10513,
+                "listed_count": 4314,
+                "created_at": "Fri May 30 19:07:59 +0000 2008",
+                "favourites_count": 8057,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 44596,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000085394995/48ea414e6f12a55fb465d759b0d53e17.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000085394995/48ea414e6f12a55fb465d759b0d53e17.jpeg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/626410215148105728/X0z4DkZv_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/626410215148105728/X0z4DkZv_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/14957147/1407765552",
+                "profile_link_color": "009999",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "EFEFEF",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 441,
+            "favorite_count": 694,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "releasethetranscripts",
+                        "indices": [
+                            31,
+                            53
+                        ]
+                    },
+                    {
+                        "text": "DemTownHall",
+                        "indices": [
+                            65,
+                            77
+                        ]
+                    },
+                    {
+                        "text": "TYTlive",
+                        "indices": [
+                            78,
+                            86
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HillaryClinton",
+                        "name": "Hillary Clinton",
+                        "id": 1339835893,
+                        "id_str": "1339835893",
+                        "indices": [
+                            1,
+                            16
+                        ]
+                    }
+                ],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 700523183498080300,
+                        "id_str": "700523183498080257",
+                        "indices": [
+                            87,
+                            110
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/CbjCH7VUMAEDyP9.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/CbjCH7VUMAEDyP9.jpg",
+                        "url": "https://t.co/FRT4k3TDUy",
+                        "display_url": "pic.twitter.com/FRT4k3TDUy",
+                        "expanded_url": "http://twitter.com/TheYoungTurks/status/700523185112920064/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "large": {
+                                "w": 386,
+                                "h": 256,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 386,
+                                "h": 256,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 340,
+                                "h": 225,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        }
+    ],
+    "search_metadata": {
+        "completed_in": 0.037,
+        "max_id": 0,
+        "max_id_str": "0",
+        "query": "%40HillaryClinton",
+        "count": 100,
+        "since_id": 0,
+        "since_id_str": "0"
+    }
+}
