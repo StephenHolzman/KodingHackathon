@@ -1,0 +1,17 @@
+.axis path, .axis line{
+  fill: none;
+  stroke: #000;
+}
+
+.rDebates line{
+    stroke: red;
+    fill: red;
+}
+
+.dDebates line{
+    stroke: blue;
+    fill: blue;
+}
+.button {
+    cursor:pointer;
+}
