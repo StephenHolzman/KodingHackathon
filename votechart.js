@@ -116,12 +116,12 @@ var draw_timeseries_linechart = function(target,id){
         if(storymode===false){
             width = window.innerWidth - margin.right - margin.left; 
        }else{
-            width = window.innerWidth*.7 - margin.right - margin.left;
+            width = window.innerWidth*.6 - margin.right - margin.left;
 
        };
         d3.select("#chart-wrapper").transition()
             .attr("width", width + margin.left + margin.right)
-            .duration(1200);
+            .duration(1);
 
         xScale.range([0, width]);
         yScale.range([height, 0]);
@@ -157,7 +157,7 @@ var draw_timeseries_linechart = function(target,id){
 
         monthnav.on("click",function(){
             storymode = true;
-            width = window.innerWidth*.7 - margin.right - margin.left;
+            width = window.innerWidth*.6 - margin.right - margin.left;
             d3.select("#chart-wrapper").transition()
             .attr("width", width + margin.left + margin.right)
             .duration(1200);

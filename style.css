@@ -18,6 +18,7 @@
 li {
 	display:inline;
 	float:left;
+	width:7%;
 	padding:5px;
 }
 #democrats{
@@ -30,13 +31,19 @@ li {
 	color:white;
 	width:200px;
 }
+#main-wrapper{
+	min-width:400px;
+}
 #poll-wrapper{
 	float:left;
+	min-width:400px;
+
 }
 #tweet-wrapper{
 	width:25%;
 	height:200px;
 	float:right;
+	padding-right:20px;
 }
 .hide{
 	display:none;
