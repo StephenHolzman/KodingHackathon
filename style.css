@@ -15,3 +15,18 @@
 .button {
     cursor:pointer;
 }
+li {
+	display:inline;
+	float:left;
+	padding:5px;
+}
+#democrats{
+	background:blue;
+	color:white;
+	width:200px;
+}
+#republicans{
+	background:red;
+	color:white;
+	width:200px;
+}

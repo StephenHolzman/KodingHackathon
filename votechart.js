@@ -113,7 +113,13 @@ var draw_timeseries_linechart = function(target,id){
     draw_debate_lines();
 
     var resize = function(){
-        width = window.innerWidth - margin.right - margin.left;
+        if(storymode===false){
+            width = window.innerWidth - margin.right - margin.left; 
+       }else{
+            width = window.innerWidth*.7 - margin.right - margin.left;
+
+       };
+
         xScale.range([0, width]);
         yScale.range([height, 0]);
 
@@ -136,7 +142,7 @@ var draw_timeseries_linechart = function(target,id){
     var month_wrapper = d3.select(target).append("div")
                                         .attr("id","month-wrapper");
 
-    var monthList = month_wrapper.append("nav").append("ul");
+    var monthList = month_wrapper.append("center").append("ul");
 
     monthnames.forEach(function(d,i){
 
@@ -147,6 +153,7 @@ var draw_timeseries_linechart = function(target,id){
                     .text(d);
 
         monthnav.on("click",function(){
+            storymode = true;
             width = window.innerWidth*.7 - margin.right - margin.left;
             if(d==="January"|d==="March"|d==="May"|d==="July"|d==="August"|d==="October"|d==="December"){
                 lastday = "31"
@@ -170,8 +177,8 @@ var draw_timeseries_linechart = function(target,id){
             xAxis = d3.svg.axis()
                     .scale(xScale)
                     .orient("bottom")
-                    .ticks(8)
-                    .tickFormat(d3.time.format('%d'));
+                    .ticks(4);
+                    //.tickFormat(d3.time.format('%d'));
 
     
 
@@ -189,17 +196,29 @@ var draw_timeseries_linechart = function(target,id){
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
                     .attr("y2", yScale(100));
+
+                var debateLabel = d3.select("#rDebate").append("text")
+                    .attr("class", "Label")
+                    .attr("transform", "translate("+xScale(d)+","+yScale(.07)+")rotate(-90)")
+                    .text("Republican Debate");
+
             });
 
             DemDebates.forEach(function(d,i){
                 d = parseDate(d);
                 d3.select("#dDebate"+DemDebates[i]).transition()
                     .duration(1200)
-                    .attr("id", "rDebate"+DemDebates[i])
+                    .attr("id", "dDebate"+DemDebates[i])
                     .attr("x1", xScale(d))
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
                     .attr("y2", yScale(100));
+
+                d3.select("#dDebate").append("text")
+                    .attr("class", "Label")
+                    .attr("transform", "translate("+xScale(d)+","+yScale(20)+")rotate(-90)")
+                    .text("Democratic Debate");
+
             });
 
             
