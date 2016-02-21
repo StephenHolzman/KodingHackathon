@@ -6,7 +6,7 @@ current_party = "republicans";
 var RepDebates = ["20150806","20150916","20151028","20151110","20151215"]
 var DemDebates = ["20151013","20151114","20151219"]
 var parseDate = d3.time.format("%Y%m%d").parse;
-
+var parseDate2 = d3.time.format("%Y-%m-%d").parse;
 //Draw the main chart
 var draw_timeseries_linechart = function(target,id){
     var DemButton = d3.select("#democrats").on("click",function(){
@@ -28,7 +28,7 @@ var draw_timeseries_linechart = function(target,id){
     var margin = {top: 10,right: 20,bottom: 100, left: 60},
         //marginBrush = {top:420, right: 150, bottom: 20, left:150}
         width = window.innerWidth*.9 - margin.right - margin.left,
-        height = 450 - margin.top - margin.bottom,
+        height = 400 - margin.top - margin.bottom,
         //heightBrush = 500 - marginBrush.top - marginBrush.bottom;
         
     chart = d3.select(target)
@@ -113,13 +113,37 @@ var draw_timeseries_linechart = function(target,id){
               
     };
     draw_debate_lines();
-    var draw_lines = function(pollfile){
+    rep_candidates = ["Trump","Rubio"]
+    var line = d3.svg.line()
+                            .interpolate("basis")
+                            .x(function(d){return xScale()})
+                            .y(function(d){return xScale()})
+
+    var draw_lines = function(pollfile,candidates){
+
         d3.csv(pollfile, function(data){
-            console.log(parseDate(data[0].Date));
+            console.log(data);
+
+            
+            candidates.forEach(function(d){
+                xcoordinates = [];
+                ycoordinates = [];
+                for(j=0;j < data.length;j++){
+                    if(data[j][d] != "NA"){
+                        
+                        xcoordinates.push(data[j].Date);
+                        ycoordinates.push(data[j][d]);
+                        
+                    }
+                };
+                console.log(ycoordinates);
+            })
+
+            
         }); 
     };
 
-    draw_lines("daily_avg.csv");
+    draw_lines("daily_avg.csv",rep_candidates);
 
     var resize = function(){
         if(window.innerWidth>800){
@@ -156,7 +180,7 @@ var draw_timeseries_linechart = function(target,id){
     var month_wrapper = d3.select("#main-wrapper").append("div")
                                         .attr("id","month-wrapper");
 
-    var monthList = month_wrapper.append("center").append("ul");
+    var monthList = month_wrapper.append("center").append("ul").attr("id","monthsul");
 
     monthnames.forEach(function(d,i){
 
