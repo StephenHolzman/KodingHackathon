@@ -49,7 +49,7 @@ var draw_timeseries_linechart = function(target,id){
      */        
     var yScale = d3.scale.linear()
                     .range([height, 0])
-                    .domain([0,100]);
+                    .domain([0,50]);
     
     /*var yScaleBrush = d3.scale.linear()
                     .range([heightBrush, 0])
@@ -94,7 +94,7 @@ var draw_timeseries_linechart = function(target,id){
                     .attr("x1", xScale(d))
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
-                    .attr("y2", yScale(100));
+                    .attr("y2", yScale(50));
             });
         }else if(current_party==="democrats"){
            var dDebates = chart.append("g")
@@ -107,7 +107,7 @@ var draw_timeseries_linechart = function(target,id){
                     .attr("x1", xScale(d))
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
-                    .attr("y2", yScale(100));
+                    .attr("y2", yScale(50));
             }); 
         };
               
@@ -140,13 +140,13 @@ var draw_timeseries_linechart = function(target,id){
             candidates.forEach(function(d){
                 get_coordinates(d,data);
                 console.log(ycoordinates);
-                var line = d3.svg.line()
+                line = d3.svg.line()
                             .interpolate("basis")
                             .x(function(d){return xScale(parseDate2(d));})
                             .y(function(d,i){return yScale(+ycoordinates[i]);})
                 
                 chart.append("path")
-                    .attr("class","line")
+                    .attr("class","poll_line")
                     .attr("d",line(xcoordinates))
                     .attr("stroke","#000")
                     .attr("fill","none");
@@ -182,6 +182,10 @@ var draw_timeseries_linechart = function(target,id){
         d3.select(".rDebates").remove();
         d3.select(".dDebates").remove();
         draw_debate_lines();
+        d3.selectAll(".poll_line").remove();
+        draw_lines("gop_daily_avg.csv",rep_candidates);
+
+
     };
     };
 
@@ -250,7 +254,7 @@ var draw_timeseries_linechart = function(target,id){
                     .attr("x1", xScale(d))
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
-                    .attr("y2", yScale(100));
+                    .attr("y2", yScale(50));
 
                 var debateLabel = d3.select("#rDebate").append("text")
                     .attr("class", "Label")
@@ -267,7 +271,7 @@ var draw_timeseries_linechart = function(target,id){
                     .attr("x1", xScale(d))
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
-                    .attr("y2", yScale(100));
+                    .attr("y2", yScale(50));
                 console.log(xScale(d));
                 d3.select("#dDebate").append("text")
                     .attr("class", "Label")
@@ -278,7 +282,9 @@ var draw_timeseries_linechart = function(target,id){
 
             setTimeout(function(){d3.select("#tweet-wrapper").attr("class","").attr("opacity",0).transition().attr("opacity",1).duration(500)},[1300]);
 
-            getTweet("clinton", '1/6/2016');
+            d3.selectAll(".poll_line").remove();
+            draw_lines("gop_daily_avg.csv",rep_candidates);
+
         });
     });
 
