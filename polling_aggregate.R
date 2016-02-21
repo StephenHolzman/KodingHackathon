@@ -157,3 +157,43 @@ dem_daily_avg$Year <- strftime(dem_daily_avg$Date,origin='1970-01-01',tz='UTC',f
 
 write.csv(dem_daily_avg,'~/Desktop/dem_daily_avg.csv')
 
+#######################################
+# Campaign Finance
+#######################################
+
+fin <- read.csv('~/Desktop/candidates_2016.csv')
+
+all_candidates <- c("TRUMP, DONALD J",
+                    'CRUZ, RAFAEL EDWARD "TED"',
+                    "RUBIO, MARCO",
+                    "CARSON, BENJAMIN S SR MD",
+                    "KASICH, JOHN R",
+                    "BUSH, JEB",
+                    "CHRISTIE, CHRISTOPHER J",
+                    "FIORINA, CARLY",
+                    "GILMORE, JAMES S III",
+                    "GRAHAM, LINDSEY O",
+                    "HUCKABEE, MIKE",
+                    "JINDAL, BOBBY",
+                    "PATAKI, GEORGE E",
+                    "PERRY, JAMES R (RICK)",
+                    "PAUL, RAND",
+                    "SANTORUM, RICHARD J",
+                    "WALKER, SCOTT",
+                    "CLINTON, HILLARY RODHAM",
+                    "SANDERS, BERNARD",
+                    "BIDEN, JR., JOSEPH R.",
+                    "CHAFEE, LINCOLN DAVENPORT MR.",
+                    "LESSIG, LAWRENCE",
+                    "O'MALLEY, MARTIN JOSEPH",
+                    "WEBB, JAMES HENRY JR.")
+
+# Replace O'Malley with O.Malley
+# matches case in this script, can can convern back later
+fin$name <- sub(pattern="O'Malley",
+                replacement="O.Malley",
+                x=fin$name)
+
+fin <- filter(fin, name %in% all_candidates)
+
+write.csv(fin,'~/Desktop/campaign_finance.csv')
