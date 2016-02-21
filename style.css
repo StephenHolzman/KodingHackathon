@@ -103,5 +103,6 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   font-size: 12px;
 }
 
-/*Twiter*/
-
+.top-words {
+    display: inline-block;
+}
