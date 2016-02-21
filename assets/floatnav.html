@@ -26,8 +26,11 @@ today = new Date();
 var startDate = "new Date(2015,2,1)";
 
 monthNameFormat = d3.time.format("%b '%y");
+
+//Used to ID li, should return "Jun15" etc
 dateIDformat = d3.time.format("%b%y");
 
+//listen to this for the chart mode. full is everything, otherwise will be date object
 view = "full";
 
 navbar = d3.select("#container")
