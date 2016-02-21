@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="screen" />
 </head>
 <html>
 
@@ -11,15 +12,12 @@
         <h1>Relive the Magical 2016 Presidential Primaries</h1></center>
 
     <div id="main-wrapper">
-        <div id="timer">
-
-        </div>
         <center id="party-selector">
-            <div id="democrats" class="button">Democrats</div>
-            <div id="republicans" class="button">Republicans</div>
+            <button id="democrats" class="btn">Democrats</button>
+            <button id="republicans" class="btn">Republicans</button>
         </center>
 
-        <div id="tweet-wrapper" class="hide"></div>
+
 
         <div id="poll-wrapper">
             <h3 id="poll-title">Polling</h3>
@@ -27,10 +25,12 @@
 
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-        
+
     </div>
-        <div id="common-words"></div>
-        <div id="word-clouds"></div>
+    <div id="tweet-wrapper"></div>
+    <div id="common-words"></div>
+    <div id="word-clouds"></div>
+
 </body>
 
 <script src="lib/jquery-1.12.0.min.js"></script>

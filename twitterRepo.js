@@ -53,7 +53,7 @@ function isGoodWord(word) {
     if (word.indexOf("http") > -1 || word.indexOf("--") > -1 || word.indexOf("-->") > -1)
         return false;
     
-    if (word == "the" || word == "for" || word == "but" || word == "and" || word == "are" || word == "that")
+    if (word == "the" || word == "for" || word == "but" || word == "and" || word == "are" || word == "that" || word == "retweeted")
         return false;
         
     return true;
@@ -113,7 +113,7 @@ function countWordsByCandidate(tweets) {
 
 // add wc to page
 function displayWordCount(counts, candidate) {
-        
+       
         $('#common-words').append("<h3>" + candidate + "</h3>");
         counts.map(function(wordAndCount) {
             $('#common-words').append("<span class='top-words'>" + wordAndCount[0] + ": " + wordAndCount[1] + "</span><br/>");
@@ -164,7 +164,7 @@ function createWordClouds(tweets) {
 function displayTweets(tweets) {
     tweets.map(function(tweet) {
         if (tweet) {
-            $("<blockquote class='twitter-tweet'>"+"<p>" + tweet.text + " -" + tweet.source + "</p>"+"<blockquote>").hide().appendTo("#tweet-wrapper").fadeIn('slow');
+            $("<blockquote class='twitter-tweet'>"+"<p>" + tweet.text + " -" + tweet.source + "</p>"+"</blockquote>").hide().appendTo("#tweet-wrapper").fadeIn('slow');
         }
     });
     
@@ -189,9 +189,9 @@ function filterForRedundantTweets(tweets_to_display, candidate) {
     });
     
     
-    if (configure.displayWC)
-        displayWordCount(countWordsByCandidate(tweets), candidate);
-        
+    if (configure.displayWC) 
+         displayWordCount(countWordsByCandidate(tweets), candidate);
+
     if (configure.displayTweets)
         displayTweets(filterForHighestRT(tweets, 2));
         
@@ -204,6 +204,13 @@ function getTweetsForSelectedDate(candidates, selDate) {
     var t = [];
     var cumTweets = [];
     
+    
+    if (configure.displayWC) 
+         $('#common-words').append("<h2>Twitter Word Count</h2><hr/>");
+
+    if (configure.displayTweets)
+        $("#tweet-wrapper").append("<h2>Popular Tweets</h2><hr/>");
+        
     candidates.forEach(function(candidate, idx, array) {
         $.get( "/data/"+ candidate + '/' + candidate +".json", function( data ) {
             // collect tweets with the selected month
