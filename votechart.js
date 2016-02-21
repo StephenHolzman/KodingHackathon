@@ -113,37 +113,51 @@ var draw_timeseries_linechart = function(target,id){
               
     };
     draw_debate_lines();
-    rep_candidates = ["Trump","Rubio"]
+    rep_candidates = ["Trump","Rubio","Bush","Carson","Cruz","Fiorina","Christie"]
     var line = d3.svg.line()
                             .interpolate("basis")
                             .x(function(d){return xScale()})
                             .y(function(d){return xScale()})
 
+    var get_coordinates=function(candidate,data){
+        xcoordinates = [];
+                ycoordinates = [];
+                console.log(data.length);
+                for(j=0;j < data.length;j++){
+                    if(data[j][candidate] != "NA"){
+                        xcoordinates.push(data[j].Date);
+                        ycoordinates.push(data[j][candidate]);
+                        
+                    };
+                };
+    }
     var draw_lines = function(pollfile,candidates){
 
         d3.csv(pollfile, function(data){
-            console.log(data);
+            console.log(data[0]);
 
             
             candidates.forEach(function(d){
-                xcoordinates = [];
-                ycoordinates = [];
-                for(j=0;j < data.length;j++){
-                    if(data[j][d] != "NA"){
-                        
-                        xcoordinates.push(data[j].Date);
-                        ycoordinates.push(data[j][d]);
-                        
-                    }
-                };
+                get_coordinates(d,data);
                 console.log(ycoordinates);
-            })
+                var line = d3.svg.line()
+                            .interpolate("basis")
+                            .x(function(d){return xScale(parseDate2(d));})
+                            .y(function(d,i){return yScale(+ycoordinates[i]);})
+                
+                chart.append("path")
+                    .attr("class","line")
+                    .attr("d",line(xcoordinates))
+                    .attr("stroke","#000")
+                    .attr("fill","none");
+                
+            });
 
             
         }); 
     };
 
-    draw_lines("daily_avg.csv",rep_candidates);
+    draw_lines("gop_daily_avg.csv",rep_candidates);
 
     var resize = function(){
         if(window.innerWidth>800){
