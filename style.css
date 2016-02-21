@@ -26,9 +26,13 @@ html {
 .button {
     cursor:pointer;
 }
-ul {
-	background-color:#999;
+
+ul#monthsul {
+	background-color:#E5E5E5;
+    padding: 15px;
+    font-size: 15px;
 }
+
 li {
 	display:inline;
 	float:center;
@@ -115,4 +119,8 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 
 .top-words {
     display: inline-block;
+}
+
+#viz_title {
+    text-decoration: underline;
 }

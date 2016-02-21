@@ -195,7 +195,7 @@ var draw_timeseries_linechart = function(target,id){
     var months = ["05","06","07","08","09","10","11","12","01","02"];
     var monthnames = ["May","June","July","August","September","October","November","December","January","February"]
         
-    var month_wrapper = d3.select("#main-wrapper").append("div")
+    var month_wrapper = d3.select("#month-wrapper").append("div")
                                         .attr("id","month-wrapper");
 
     var monthList = month_wrapper.append("center").append("ul").attr("id","monthsul");

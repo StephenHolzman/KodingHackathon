@@ -97,6 +97,7 @@ function countWordsByCandidate(tweets) {
     tweets.map(function(tweet) {
         if(tweet) {
             tweet.text.split(' ').map(function(word) {
+                word = word.toLowerCase();
                 if(word && isGoodWord(word)) {
                     word = sanatize(word);
                     if(word in mostCommonWords) {
