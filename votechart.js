@@ -122,7 +122,7 @@ var draw_timeseries_linechart = function(target,id){
     var get_coordinates=function(candidate,data){
         xcoordinates = [];
                 ycoordinates = [];
-                console.log(data.length);
+                //console.log(data.length);
                 for(j=0;j < data.length;j++){
                     if(data[j][candidate] != "NA"){
                         xcoordinates.push(data[j].Date);
@@ -134,12 +134,12 @@ var draw_timeseries_linechart = function(target,id){
     var draw_lines = function(pollfile,candidates){
 
         d3.csv(pollfile, function(data){
-            console.log(data[0]);
+            //console.log(data[0]);
 
             
             candidates.forEach(function(d){
                 get_coordinates(d,data);
-                console.log(ycoordinates);
+                //console.log(ycoordinates);
                 line = d3.svg.line()
                             .interpolate("basis")
                             .x(function(d){return xScale(parseDate2(d));})
@@ -272,7 +272,7 @@ var draw_timeseries_linechart = function(target,id){
                     .attr("x2", xScale(d))
                     .attr("y1", yScale(0))
                     .attr("y2", yScale(50));
-                console.log(xScale(d));
+                //console.log(xScale(d));
                 d3.select("#dDebate").append("text")
                     .attr("class", "Label")
                     .attr("transform", "translate("+xScale(d)+","+yScale(20)+")rotate(-90)")
