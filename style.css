@@ -18,11 +18,19 @@
 .button {
     cursor:pointer;
 }
+ul {
+	background-color:#999;
+}
 li {
 	display:inline;
-	float:left;
-	width:7%;
+	float:center;
+	width:10%;
 	padding:5px;
+	border-radius:2px;
+	border-color:#000;
+}
+li:hover{
+	background-color:#FFF;
 }
 #democrats{
 	background:blue;
