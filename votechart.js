@@ -240,6 +240,7 @@ var draw_timeseries_linechart = function(target,id){
 
             setTimeout(function(){d3.select("#tweet-wrapper").attr("class","").attr("opacity",0).transition().attr("opacity",1).duration(500)},[1300]);
 
+            getTweet("clinton", '1/6/2016');
         });
     });
 
