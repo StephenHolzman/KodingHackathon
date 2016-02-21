@@ -8,6 +8,9 @@
 <html>
 
 <body>
+    <div id="loading">
+        <img id="loading-image" src="spinning.gif" alt="Loading..." />
+    </div>
     <center>
         <h1 id="viz_title">Relive the Magical 2016 Presidential Primaries</h1>
     </center>
@@ -37,11 +40,23 @@
     </div>
     <div id="tweet-wrapper"></div>
     <div id="common-words"></div>
-    <div id="word-clouds"></div>
+    <center>
+        <div id="word-clouds"></div>
+    </center>
+    
 
 </body>
 
+
+
 <script src="lib/jquery-1.12.0.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+     $(window).load(function() {
+        $('#loading').hide();
+  });
+</script>
+
 <script src="d3.js"></script>
 <script src="d3.layout.cloud.js"></script>
 <script src="knockout.min.js"></script>

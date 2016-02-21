@@ -140,8 +140,8 @@ function createWordClouds(tweets) {
 
   function draw(words) {
     d3.select("#word-clouds").append("svg")
-        .attr("width", 300)
-        .attr("height", 300)
+        .attr("width", 500)
+        .attr("height", 500)
         .append("g")
         .attr("transform", "translate(150,150)")
         .selectAll("text")
@@ -185,7 +185,6 @@ function filterForRedundantTweets(tweets_to_display, candidate) {
            }
         });
         
-        console.log(tweet.source);
         if (original && tweet.source)
             tweets.push(tweet);
     });
@@ -231,8 +230,9 @@ function getTweetsForSelectedDate(candidates, selDate) {
             if (configure.displayCloud) {
                 if (idx === array.length - 1){ 
                     createWordClouds(cumTweets);
+                    
                 }
             }
         });
-    });
+    });   
 }
