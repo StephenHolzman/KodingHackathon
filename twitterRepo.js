@@ -1,6 +1,24 @@
 
 
 var getTweet = function(candidate, date) {
+    
+    $('#monthsul').click(function (evt) {
+        var $this = $(evt.target);
+        var month = $this.context.innerHTML;
+        
+        switch(month) {
+            case 'may':
+                break;
+            case n:
+                code block
+                break;
+            default:
+                default code block
+        }
+    });
+
+    
+
     var rep = "republicans";
     var dem = "democrats";
     $("#tweet-wrapper").html("")
@@ -15,10 +33,30 @@ var getTweet = function(candidate, date) {
     }
     
     // get tweets for a candidate from json
-    getTweetsForSelectedDate(candidates, selDate);
+    var tweets_to_display = getTweetsForSelectedDate(candidates, selDate);    
+};
 
+function filterForHighestRT(tweets, n) {
+    function compare(a,b) {
+        if (a.rt_count < b.rt_count)
+            return -1;
+        else if (a.rt_count > b.rt_count)
+            return 1;
+        else 
+            return 0;
+    }   
 
-    // remove redudent tweets
+    tweets.sort(compare);
+    return tweets.splice(0, n);
+}
+
+function displayTweets(tweets) {
+    tweets.map(function(tweet) {
+        $("#tweet-wrapper").append("<p>" + tweet.text + " -" + tweet.source + "</p>")
+    })
+}
+
+function filterForRedundantTweets(tweets_to_display) {
     var tweets = [];
     tweets.push(tweets_to_display[0]);
     tweets_to_display.splice(0,1);
@@ -33,47 +71,30 @@ var getTweet = function(candidate, date) {
         
         if (original)
             tweets.push(tweet);
-        
     });
     
-    
-    // add tweets to view
-    
-    // tweets.map(function(tweet) {
-    //     $("#tweet-wrapper").append("<p>" + tweet.text +"</p>")
-    // })
-    
-};
-
-
-function displayTweets(tweets) {
-    
-}
-
-function filterForRedundantTweets(tweets) {
-    
+    displayTweets(filterForHighestRT(tweets, 2));
 }
 
 function getTweetsForSelectedDate(candidates, selDate) {
-    var tweets_to_display = [];
-    candidates.map(function(candidate) {
+    var t = [];
+    candidates.forEach(function(candidate) {
         $.get( "/data/"+ candidate + '/' + candidate +".json", function( data ) {
-            
-            var tweets = data;
-            
             // collect tweets with the selected month
-            tweets.map(function(tweet) {
+            data.forEach(function(tweet) {
                 var tweetDate = new Date(tweet.date);
                 // just look at month and year now
-                if (selDate.getFullYear() == tweetDate.getFullYear() && selDate.getMonth() == tweetDate.getMonth()) {
-                    tweets_to_display.push(tweet);
-                    console.log(tweets_to_display)
-                }
+                if( selDate.getFullYear() == tweetDate.getFullYear() &&  selDate.getMonth() == tweetDate.getMonth()) 
+                    t.push(tweet);
             });  
+            filterForRedundantTweets(t);
         });
     });
-    return tweets_to_display;
 }
+
+
+
 // listen for click on  a month or party
 
-getTweet("clinton", '1/6/2016');
+
+// getTweet("clinton", '1/6/2016');
