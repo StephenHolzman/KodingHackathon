@@ -1,10 +1,9 @@
-
 library(lubridate)
 library(dplyr)
 library(reshape2)
 library(ggplot2)
 
-df <- read.csv('2016-national-gop-primary.csv')
+df <- read.csv('/Volumes/hd.2/Code/KodingHackathon/2016-national-gop-primary.csv')
 
 # parse Start.Date and End.Date into POSIXct date-time objects
 df$Start.Date <- parse_date_time(df$Start.Date,orders='ymd',tz='UTC')
@@ -42,3 +41,36 @@ write.csv(df,"gop_primary_clean.csv")
 ggplot(df,aes(x=Number.of.Observations,color=Affiliation,fill=Affiliation)) + 
   geom_histogram(aes(y=..density..),binwidth=50,fill='white',alpha=0.5) +
   geom_density(alpha=0.6)
+
+qplot(Start.Date,Number.of.Observations,color=Affiliation,data=df) + geom_point()
+
+# Calculate the average by Start.Date
+candidates <- c("Trump",
+                "Cruz",
+                "Rubio",
+                "Carson",
+                "Kasich",
+                "Bush",
+                "Christie",
+                "Fiorina",
+                "Gilmore",
+                "Graham",
+                "Huckabee",
+                "Jindal",
+                "Pataki",
+                "Perry",
+                "Rand.Paul",
+                "Santorum",
+                "Walker",
+                "Undecided")
+
+# initialize daily averages df
+daily_avg <- aggregate(df[candidates[1:length(candidates)]],
+                       by=list(df$Start.Date),
+                       FUN=mean) %>% 
+  data.frame()
+
+names(daily_avg)[1] <- "Date"
+
+write.csv(daily_avg,'~/Desktop/daily_avg.csv')
+
