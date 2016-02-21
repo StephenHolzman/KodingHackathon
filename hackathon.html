@@ -6,108 +6,19 @@
     <div id="democrats" class="button">Democrats</div>
     <div id="republicans" class="button">Republicans</div>
 </center>
-<div id="tweet-wrapper"></div>
-<div id="main-wrapper"></div>
+
+<div id="main-wrapper">
+    <div id="tweet-wrapper" class="hide">
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Taquitos and Chocolate Milk.</p>&mdash; Stephen Holzman (@StephenHolz) <a href="https://twitter.com/StephenHolz/status/1455557765">April 5, 2009</a></blockquote>
+    </div>
+    <div id="poll-wrapper">
+        <h3 id="poll-title">Polling</h3>
+    </div>
+    
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+
 <script src="d3.js"></script>
-<script src="lib/jquery-1.12.0.min.js"></script>
 <script src="twitterRepo.js"></script>
 <script src="votechart.js"></script>
-<script>
-current_party = "democrats";
-
-var DemButton = d3.select("#democrats").on("click",function(){
-    if(current_party === "republicans"){
-        current_party = "democrats";
-        console.log(current_party);
-    }   
-});
-
-var RepButton = d3.select("#republicans").on("click",function(){
-    if(current_party === "democrats"){
-        current_party = "republicans";
-        console.log(current_party);
-    }   
-});
-
-var RepDebates = ["20150806","20150916","20151028","20151110","20151215"]
-var DemDebates = ["20151013","20151114","20151219"]
-var parseDate = d3.time.format("%Y%m%d").parse;
-
-//Draw the main chart
-var draw_timeseries_linechart = function(target,id){
-    
-    //Set Margins for Chart
-    var margin = {top: 50,right: 150,bottom: 100, left: 150},
-        //marginBrush = {top:420, right: 150, bottom: 20, left:150}
-        width = window.innerWidth - margin.right - margin.left,
-        height = 500 - margin.top - margin.bottom,
-        //heightBrush = 500 - marginBrush.top - marginBrush.bottom;
-        
-    chart = d3.select(target)
-                            .append("svg")
-                            .attr("id",id)
-                            .attr("width", width + margin.left + margin.right)
-                            .attr("height", height + margin.top + margin.bottom)
-                            .append("g")
-                            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-                            
-    var xScale = d3.time.scale()
-                    .range([0, width])
-                    .domain([parseDate('20150601'),parseDate('20160218')]);
-
-    /*var xScaleBrush = d3.time.scale()
-                        .range([0, width])
-                        .domain([parseDate('20150601'),parseDate('20150218')]);
-     */        
-    var yScale = d3.scale.linear()
-                    .range([height, 0])
-                    .domain([0,100]);
-    
-    /*var yScaleBrush = d3.scale.linear()
-                    .range([heightBrush, 0])
-                    .domain([0,100]);
-    */
-
-    var xAxis = d3.svg.axis()
-                    .scale(xScale)
-                    .orient("bottom");
-
-    /*var xAxisBrush = d3.svg.axis()
-                    .scale(xScaleBrush)
-                    .orient("bottom");
-    */
-
-    var yAxis = d3.svg.axis()
-                    .scale(yScale)
-                    .orient("left")
-                    .ticks(5);
-    
-    var timeAxis = chart.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + height + ")")
-            .call(xAxis);
-
-    var moneyAxis = chart.append("g")
-            .attr("class", "y axis")
-            .call(yAxis);
-
-    var draw_debate_lines = function(){
-        d3.selectAll(".rDebates").remove();
-        d3.selectAll(".dDebates").remove();
-        if(current_party==="republicans"){
-            var rDebates = chart.append("g")
-                        .attr("class","rDebates");
-        
-            RepDebates.forEach(function(d,i) {
-
-                d = parseDate(d);
-                var line = rDebates.append("line")
-                    .attr("id", "rDebate"+RepDebates[i])
-                    .attr("x1", xScale(d))
-                    .attr("x2", xScale(d))
-                    .attr("y1", yScale(0))
-                    .attr("y2", yScale(100));
-            });
-        }else if(current_party==="democrats"){
-           var dDebates = chart.append("g")
-                        .attr("class","dDebates");

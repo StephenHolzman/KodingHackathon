@@ -1,5 +1,5 @@
 
-current_party = "democrats";
+current_party = "republicans";
 
 
 
