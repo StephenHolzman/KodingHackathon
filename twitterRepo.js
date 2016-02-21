@@ -1,15 +1,12 @@
 
 
-var getTweet = function(candidate, date) {
-    
-    var d = "";
-   
-
+var getTweet = function(candidate, date) {   
     var rep = "republicans";
     var dem = "democrats";
-    $("#tweet-wrapper").html("")
-    var selDate = new Date(d);
-    console.log(selDate, 'helo');
+    $("#tweet-wrapper").html("");
+    $("#common-words").html("");
+    var selDate = new Date(date);
+
     
     
     var candidates = []
@@ -37,13 +34,80 @@ function filterForHighestRT(tweets, n) {
     return tweets.splice(0, n);
 }
 
-function displayTweets(tweets) {
-    tweets.map(function(tweet) {
-        $("#tweet-wrapper").append("<p>" + tweet.text + " -" + tweet.source + "</p>")
-    })
+// function orderWordCount(mostCommonWords) {
+//     var ordered = {};
+//     while (mostCommonWords) {
+//         var f = Object.keys(mostCommonWords)[0];
+//     }
+// }
+
+function isGoodWord(word) {
+    word = word.toLowerCase();
+    if (word.length <= 2)
+       return false;
+       
+    if (word.indexOf("http") > -1 || word.indexOf("--") > -1 || word.indexOf("-->") > -1)
+        return false;
+    
+    if (word == "the" || word == "for" || word == "but" || word == "and" || word == "are" || word == "that")
+        return false;
+        
+    return true;
 }
 
-function filterForRedundantTweets(tweets_to_display) {
+function sanatize(word) {
+    return word.replace('!', '').replace('.', '').replace(':', '')
+                .replace('?', '').replace(')', '').replace('(', '')
+                .replace(',', '').replace('"', '').replace('“', '');
+}
+
+function orderWordCount(wordCount, n) {
+    var sortable = [];
+    for (var word in wordCount)
+        sortable.push([word, wordCount[word]])
+    
+    var sorted = sortable.sort(function(a, b) {return a[1] - b[1]})
+    sorted = sorted.reverse();
+    return sorted.splice(0, n);
+}
+
+function countWordsByCandidate(tweets) {
+    var mostCommonWords = {};
+    tweets.map(function(tweet) {
+        if(tweet) {
+            tweet.text.split(' ').map(function(word) {
+                if(word && isGoodWord(word)) {
+                    word = sanatize(word);
+                    if(word in mostCommonWords) {
+                        mostCommonWords[word] = mostCommonWords[word] + 1;
+                    } else {
+                        mostCommonWords[word] = 1;
+                    }
+               } 
+            });
+        }
+    });
+    return orderWordCount(mostCommonWords, 10);
+} 
+
+function displayTweets(tweets) {
+    tweets.map(function(tweet) {
+        if (tweet) {
+            $("<blockquote class='twitter-tweet'>"+"<p>" + tweet.text + " -" + tweet.source + "</p>"+"<blockquote>").hide().appendTo("#tweet-wrapper").fadeIn('slow');
+        }
+    });
+    
+}
+
+function displayWordCount(counts, candidate) {
+        $('#common-words').append("<h3>" + candidate + "</h3>");
+        counts.map(function(wordAndCount) {
+            
+            $('#common-words').append("<span>" + wordAndCount[0] + ": " + wordAndCount[1] + "</span><br/>");
+        })
+}
+
+function filterForRedundantTweets(tweets_to_display, candidate) {
     var tweets = [];
     tweets.push(tweets_to_display[0]);
     tweets_to_display.splice(0,1);
@@ -60,7 +124,9 @@ function filterForRedundantTweets(tweets_to_display) {
             tweets.push(tweet);
     });
     
+    displayWordCount(countWordsByCandidate(tweets), candidate);
     displayTweets(filterForHighestRT(tweets, 2));
+    
 }
 
 function getTweetsForSelectedDate(candidates, selDate) {
@@ -74,9 +140,7 @@ function getTweetsForSelectedDate(candidates, selDate) {
                 if( selDate.getFullYear() == tweetDate.getFullYear() &&  selDate.getMonth() == tweetDate.getMonth()) 
                     t.push(tweet);
             });  
-            filterForRedundantTweets(t);
+            filterForRedundantTweets(t, candidate);
         });
     });
 }
-
-// getTweet("clinton", '1/6/2016');
