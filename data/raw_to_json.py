@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 
 candidate = "clinton"
+source = "@HillaryClinton"
 
 class Tweet:
     def __init__(likes, text, candidate, date):
@@ -45,8 +46,12 @@ for b in bob:
     for c in b:
         ch = c.strip()
         if ch == "More":
-            tweets.append(tweet)
-            break
+            if "Retweeted" in tweet["text"]:
+                break
+            else :
+                tweet["source"] = source
+                tweets.append(tweet)
+                break
         
         if rt:
             tweet["rt_count"] = int(ch.replace('K', '000').replace('.', ''))
