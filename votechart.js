@@ -113,6 +113,13 @@ var draw_timeseries_linechart = function(target,id){
               
     };
     draw_debate_lines();
+    var draw_lines = function(pollfile){
+        d3.csv(pollfile, function(data){
+            console.log(parseDate(data[0].Date));
+        }); 
+    };
+
+    draw_lines("daily_avg.csv");
 
     var resize = function(){
         if(window.innerWidth>800){
@@ -233,10 +240,12 @@ var draw_timeseries_linechart = function(target,id){
 
             setTimeout(function(){d3.select("#tweet-wrapper").attr("class","").attr("opacity",0).transition().attr("opacity",1).duration(500)},[1300]);
 
-        })
-    })
+            getTweet("clinton", '1/6/2016');
+        });
+    });
 
 };
+
 
 
 draw_timeseries_linechart("#poll-wrapper","chart-wrapper");
