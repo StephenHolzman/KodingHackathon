@@ -2,8 +2,8 @@ import json
 from datetime import datetime
 import time
 
-candidate = "clinton"
-source = "@HillaryClinton"
+candidate = "rubio"
+source = "@marcorubio"
 
 class Tweet:
     def __init__(likes, text, candidate, date):
@@ -13,7 +13,7 @@ class Tweet:
         self.date = date
 
 bob = []
-with open('./clinton_tweets/clinton.txt', 'r') as input:
+with open("./"+ candidate +"/"+ candidate +".txt", 'r') as input:
     bol = []
     for line in input:
         if line.strip() == "##NEW##":
@@ -22,18 +22,14 @@ with open('./clinton_tweets/clinton.txt', 'r') as input:
         bol.append(line.strip())
 
 def validate(date_text):
-    print(date_text)
     t = ""
     if len(date_text) == 5 or len(date_text) == 6:
         v = date_text.split(' ')
         date_text = v[1] + ' ' + v[0] + " 2016"
-        
-        
     try:
         t = datetime.strptime(date_text, '%d %b %Y')
     except:
         t = datetime.now()
-        
     return t
     
 tweets = []
@@ -66,11 +62,11 @@ for b in bob:
             rt = 1
         elif ch == "Like":
             like = 1
-        elif ch.split(" ")[0] == "@HillaryClinton":
-            tweet["date"] = datetime.strftime(validate(ch.replace('@HillaryClinton', '').strip()), '%Y-%m-%d')
+        elif ch.split(" ")[0] == source:
+            tweet["date"] = datetime.strftime(validate(ch.replace(source, '').strip()), '%Y-%m-%d')
             date = 1
         
         
     
-fo = open("./clinton_tweets/clinton.json", "w+")
+fo = open("./"+ candidate +"/"+ candidate +".json", "w+")
 fo.write( json.dumps(tweets) )
