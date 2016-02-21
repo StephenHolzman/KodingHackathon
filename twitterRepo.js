@@ -1,4 +1,5 @@
 var getTweet = function(candidate, date) {
+    $("#tweet-wrapper").html("")
     var selDate = new Date(date);
 
     $.get( "/data/"+ candidate + '/' + candidate +".json", function( data ) {
