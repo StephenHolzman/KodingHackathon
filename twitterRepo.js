@@ -185,7 +185,8 @@ function filterForRedundantTweets(tweets_to_display, candidate) {
            }
         });
         
-        if (original)
+        console.log(tweet.source);
+        if (original && tweet.source)
             tweets.push(tweet);
     });
     
