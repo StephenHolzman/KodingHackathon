@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+<div id="container"></div>
+
+<script src="d3.min.js"></script>
+<script src="date.js"></script>
+<script src="vendor/jquery-1.9.1.min.js"></script>
+
+<script>
+
+var header = d3.select("#container")
+				.append("div")
+				.attr("id","header")
+var title = header.append("h1")
+				.text("Need to catch up with the election?")
+var subtitle = header.append("h3")
+				.text("Relive the magical 2016 Presidential Primary")
+var space = d3.select("#container")
+	.append("div")
+	.attr("id","space")
+	.append("a")
+	.text("space");
+//Date Control
+today = new Date();
+var startDate = "new Date(2015,2,1)";
+
+monthNameFormat = d3.time.format("%b '%y");
+dateIDformat = d3.time.format("%b%y");
+
+view = "full";
+
+navbar = d3.select("#container")
+			.append("div")
+			.attr("id","navbar")
+			.append("ul");
+
+var fullview = navbar.append("li")
+	.attr("id","fullview")
+	.attr("class","selected")
+	.append("a")
+	.text("Full View")
+
+fullview.on("click",function(){
+	if(view != "full"){
+		fullview.attr("class","selected");
+
+		d3.selectAll(".month-direct")
+				.attr("class","month-direct active");
+
+		d3.select("#previous").attr("class","inactive");
+		d3.select("#next").attr("class","inactive");
+		d3.select("#"+dateIDformat(today)).attr("class","month-direct active feature-month");
+
+		view = "full";
+
+	}
+});
+
+var previous = navbar.append("li")
+	.attr("id","previous")
+	.attr("class","inactive")
+	.append("a")
+	.text("Previous")
+
+previous.on("click",function(){
+	if(view != "full" && monthNameFormat(view) != "Mar '15"){
+		d3.select("#"+dateIDformat(view))
+			.attr("class","month-direct active")
+		
+		
+		view = view.previous().month();
+
+		d3.select("#"+dateIDformat(view))
+			.attr("class","month-direct selected feature-month");
+		d3.select("#next").attr("class","active");
+
+		if(monthNameFormat(today)===monthNameFormat(view)){
+				d3.select("#next").attr("class","inactive");
+		}else{
+			d3.select("#next").attr("class","active");
+		};
+		if(monthNameFormat(eval(startDate))===monthNameFormat(view)){
+			d3.select("#previous").attr("class","inactive");
+		}else{
+			d3.select("#previous").attr("class","active");
+		};
+	};
+});
+
+for(var month = eval(startDate); today > month; month = month.next().month()){
+	navbar.append("li")
+		.attr("id",dateIDformat(month))
+		.attr("class","month-direct active")
+		.append("a")
+		.text(monthNameFormat(month))
+		.on("click",function(){
+			d3.selectAll(".month-direct")
+				.attr("class","month-direct active");
+
+			d3.select(this.parentNode).attr("class","month-direct selected feature-month");
+
+			fullview.attr("class","active");
+
+			view = monthNameFormat.parse(d3.select(this).text());
+		
+			if(monthNameFormat(today)===monthNameFormat(view)){
+				d3.select("#next").attr("class","inactive");
+			}else{
+				d3.select("#next").attr("class","active");
+			};
+			if(monthNameFormat(eval(startDate))===monthNameFormat(view)){
+				d3.select("#previous").attr("class","inactive");
+			}else{
+				d3.select("#previous").attr("class","active");
+			};
+		});
+
+
+};
+d3.select("#"+dateIDformat(today)).attr("class","month-direct active feature-month")
+d3.selectAll(".month-direct");
+var next = navbar.append("li")
+	.attr("id","next")
+	.attr("class","inactive")
+	.append("a")
+	.text("Next")
+
+next.on("click",function(){
+	if(view != "full" && monthNameFormat(view) != "Feb '16"){
+		d3.select("#"+dateIDformat(view))
+			.attr("class","month-direct active")
+		
+		
+		view = view.next().month();
+
+		d3.select("#"+dateIDformat(view))
+			.attr("class","month-direct selected feature-month");
+		d3.select("#previous").attr("class","active");
+		
+		if(monthNameFormat(today)===monthNameFormat(view)){
+			d3.select("#next").attr("class","inactive");
+		}else{
+			d3.select("#next").attr("class","active");
+		};
+		if(monthNameFormat(eval(startDate))===monthNameFormat(view)){
+			d3.select("#previous").attr("class","inactive");
+		}else{
+			d3.select("#previous").attr("class","active");
+		};
+	};
+});
+
+
+</script>
