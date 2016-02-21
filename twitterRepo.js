@@ -2,27 +2,14 @@
 
 var getTweet = function(candidate, date) {
     
-    $('#monthsul').click(function (evt) {
-        var $this = $(evt.target);
-        var month = $this.context.innerHTML;
-        
-        switch(month) {
-            case 'may':
-                break;
-            case n:
-                code block
-                break;
-            default:
-                default code block
-        }
-    });
-
-    
+    var d = "";
+   
 
     var rep = "republicans";
     var dem = "democrats";
     $("#tweet-wrapper").html("")
-    var selDate = new Date('1/6/2016');
+    var selDate = new Date(d);
+    console.log(selDate, 'helo');
     
     
     var candidates = []
@@ -91,10 +78,5 @@ function getTweetsForSelectedDate(candidates, selDate) {
         });
     });
 }
-
-
-
-// listen for click on  a month or party
-
 
 // getTweet("clinton", '1/6/2016');
