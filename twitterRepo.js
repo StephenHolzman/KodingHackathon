@@ -112,10 +112,15 @@ function countWordsByCandidate(tweets) {
     return orderWordCount(mostCommonWords, 10);
 } 
 
+function createHorCharts() {
+
+}
+
+
 // add wc to page
 function displayWordCount(counts, candidate) {
-       
-        $('#common-words').append("<h4 class='underlined'>" + candidate + "</h4>");
+       var elem = $('#common-words');
+        elem.append("<h4 class='underlined'>" + candidate + "</h4>");
         counts.map(function(wordAndCount) {
             $('#common-words').append("<span class='top-words'>" + wordAndCount[0] + ": " + wordAndCount[1] + "</span><br/>");
         })
@@ -165,10 +170,9 @@ function createWordClouds(tweets) {
 function displayTweets(tweets) {
     tweets.map(function(tweet) {
         if (tweet) {
-            $("<blockquote class='twitter-tweet'>"+"<p>" + tweet.text + " -" + tweet.source + "</p>"+"</blockquote>").hide().appendTo("#tweet-wrapper").fadeIn('slow');
+            $("<blockquote class='twitter-tweet'> <p>" + tweet.text + "</p>" + tweet.source + " " + (new Date(tweet.date).toLocaleDateString()) +"</blockquote>").hide().appendTo("#tweet-wrapper").fadeIn('slow');
         }
     });
-    
 }
 
 // filter out redendant tweets -- THIS IS WHERE DISPLAY FUNCTIONS ARE CALLED
