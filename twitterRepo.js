@@ -115,7 +115,7 @@ function countWordsByCandidate(tweets) {
 // add wc to page
 function displayWordCount(counts, candidate) {
        
-        $('#common-words').append("<h3>" + candidate + "</h3>");
+        $('#common-words').append("<h4 class='underlined'>" + candidate + "</h4>");
         counts.map(function(wordAndCount) {
             $('#common-words').append("<span class='top-words'>" + wordAndCount[0] + ": " + wordAndCount[1] + "</span><br/>");
         })
@@ -207,10 +207,10 @@ function getTweetsForSelectedDate(candidates, selDate) {
     
     
     if (configure.displayWC) 
-         $('#common-words').append("<h2>Twitter Word Count</h2><hr/>");
+         $('#common-words').append("<h3>Word Count</h3><hr/>");
 
     if (configure.displayTweets)
-        $("#tweet-wrapper").append("<h2>Popular Tweets</h2><hr/>");
+        $("#tweet-wrapper").append("<h3>Popular Tweets</h3><hr/>");
         
     candidates.forEach(function(candidate, idx, array) {
         $.get( "/data/"+ candidate + '/' + candidate +".json", function( data ) {

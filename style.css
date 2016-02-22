@@ -143,3 +143,11 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 #viz_title {
     text-decoration: underline;
 }
+
+.twitter-header {
+    text-align: center;
+}
+
+.underlined {
+    text-decoration: underline;
+}

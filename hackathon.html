@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <html>
 
@@ -21,9 +22,9 @@
             <button id="democrats" class="btn">Democrats</button>
             <button id="republicans" class="btn">Republicans</button>
         </center>
-        
+
         <br/>
-        
+
         <center id="month-wrapper">
             <h3>Step 2: Choose a month</h3>
         </center>
@@ -38,13 +39,14 @@
 
 
     </div>
-    <div id="tweet-wrapper"></div>
-    <div id="common-words"></div>
-    <center>
-        <div id="word-clouds"></div>
-    </center>
-    
-
+    <section>
+        <h2 class="twitter-header">Twitter <i class="fa fa-twitter fa"></i></h2>
+        <div id="tweet-wrapper"></div>
+        <div id="common-words"></div>
+        <center>
+            <div id="word-clouds"></div>
+        </center>
+    </section>
 </body>
 
 
@@ -52,14 +54,14 @@
 <script src="lib/jquery-1.12.0.min.js"></script>
 
 <script language="javascript" type="text/javascript">
-     $(window).load(function() {
+    $(window).load(function() {
         $('#loading').hide();
   });
+
 </script>
 
 <script src="d3.js"></script>
 <script src="d3.layout.cloud.js"></script>
-<script src="knockout.min.js"></script>
 <script src="twitterRepo.js"></script>
 <script src="votechart.js"></script>
 <script src="events.js"></script>
